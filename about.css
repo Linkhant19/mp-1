@@ -128,10 +128,6 @@ main p{
     color: var(--csnow);
 }
 
-#profile-image{
-    max-width: 100%;
-}
-
 #main{
     width: 100%;
     display: flex;
@@ -153,17 +149,19 @@ main p{
     margin: 1vh 1vw;
 }
 
-#main-gif-container{
-    width: 100%;
-    display: flex;
-    flex-direction: row;
-    align-items: center;
-    justify-content: center;
+#profile-image{
+    max-width: 100%;
 }
 
-#main-gif{
-    width: 20%;
-    margin: 5vh 1vw;
+#about-photos-container{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+}
+
+.about-photo{
+    width: 40%;
+    margin: 1vh 1vw;
 }
 
 #main-title{
@@ -214,6 +212,24 @@ footer p {
         flex-direction: column;
         align-items: center;
         padding: 2vh 2vw;
+    }
+
+    #about-photos-container{
+        display: flex;
+        flex-direction: column;
+        justify-content: space-evenly;
+        align-items: center;
+    }
+
+    .about-photo{
+        height: 15vh;
+        width: auto;
+        margin: 1vh 1vw;
+    }
+
+    #main-image{
+        width: 50%;
+        margin: 1vh 1vw;
     }
 
     nav {
