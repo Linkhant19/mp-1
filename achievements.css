@@ -150,30 +150,37 @@ main p{
 }
 
 #main img{
-    width: 28%;
+    width: 20%;
     margin: 1vh 1vw;
     padding: 1vh 1vw;
 }
 
-#gmail-container{
+#a1-container{
     display: flex;
     flex-direction: row;
     align-items: center;
-    justify-content: center;
+    justify-content: left;
 }
 
-#phone-container{
+#a2-container{
     display: flex;
     flex-direction: row;
     align-items: center;
-    justify-content: center;
+    justify-content: left;
 }
 
-#linkedin-container{
+#a3-container{
     display: flex;
     flex-direction: row;
     align-items: center;
-    justify-content: center;
+    justify-content: left;
+}
+
+#a4-container{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: left;
 }
 
 /*Two column container ends*/
@@ -234,15 +241,19 @@ footer p {
         margin: 5px;
     }
 
-    #gmail-container{
+    #a1-container{
         flex-direction: column;
     }
 
-    #phone-container{
+    #a2-container{
         flex-direction: column;
     }
 
-    #linkedin-container{
+    #a3-container{
+        flex-direction: column;
+    }
+
+    #a4-container{
         flex-direction: column;
     }
 }
