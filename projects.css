@@ -169,6 +169,10 @@ main p{
     padding: 2vh 2vw;
 }
 
+#output {
+    color: var(--cfluorescentcyan)
+}
+
 /*Two column container ends*/
 
 /* footer starts */
