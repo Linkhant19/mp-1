@@ -1,0 +1,243 @@
+/* styles.css */
+
+/* imports from Google Fonts */
+@import url('https://fonts.googleapis.com/css2?family=Honk&display=swap'); /* font-family: "Honk", serif; */
+@import url('https://fonts.googleapis.com/css2?family=Nabla&display=swap'); /* font-family: "Nabla", serif; */
+@import url('https://fonts.googleapis.com/css2?family=Kode+Mono:wght@400..700&display=swap'); /* font-family: "Kode Mono", serif; */
+
+/* color palette 1:
+Prussian Blue: #13293D
+Cerulean: #4281A4
+Mint Green: #C9FBFF
+Peach: #FFC49B
+Imperial Red: #F15152 */
+
+/* color palette 2:
+russian violet: #291457
+dark purple: #150318
+snow: #FBF5F3
+persian indigo: #2E0A75
+fluorescent cyan: #1BE2E6 */
+
+
+/* I am storing my color variables here because I want my code to be more readable */
+:root {
+    /* palette 1 */
+    --cpblue: #13293D;
+    --ccerulean: #4281A4;
+    --cmintgreen: #C9FBFF;
+    --cpeach: #FFC49B;
+    --cimperialred: #F15152;
+
+    /* palette 2 */
+    --crussianviolet: #291457;
+    --cdarkpurple: #150318;
+    --csnow: #FBF5F3;
+    --cpersianindigo: #2E0A75;
+    --cfluorescentcyan: #1BE2E6;
+}
+
+
+
+* {
+    margin: 0;
+    box-sizing: border-box;
+}
+
+/* to center my page */
+#page-wrapper {
+    width: 80vw;
+    margin: 0 auto;
+    background-color: var(--cimperialred);
+}
+
+/* header starts */
+header {
+    text-align: left;
+    padding: 40px;
+    /* margin-bottom: 40px; */
+    background-color: var(--cpersianindigo);
+    border: 1px solid var(--csnow);
+}
+
+header h1, header p {
+    font-family: "Honk", serif;
+    color: var(--cfluorescentcyan);
+}
+
+header h1 {
+    font-size: calc(7px + 3.5vw);
+}
+
+header p {
+    font-size: calc(4px + 1.5vw);
+}
+/* header ends */
+
+/*Two column container starts:*/
+#container{
+    width: 100%;
+    display: flex;
+    flex-direction: row;
+    position: relative;
+    background-color: var(--cdarkpurple);
+    border: 1px solid var(--csnow);
+}
+
+nav{
+    width: 30%;
+}
+
+nav ul{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+    background-color: var(--cpersianindigo);
+    text-align: center;
+    list-style: none;
+    padding-left: 0;
+}
+
+nav li{
+    font-size: calc(3px + 1vw);
+    width: 90%;
+    background-color: var(--cfluorescentcyan);
+    padding: 2vh 0;
+    margin: 5vh auto;
+    border-radius: 20%;
+}
+
+
+nav a{
+    font-family: "Kode Mono", serif;
+    text-decoration: none;
+}
+
+main{
+    display: flex;
+    flex-direction: column;
+    width:70%;
+    background-color: var(--cdarkpurple);
+    font-family: "Kode Mono", serif;
+}
+
+
+main p{
+    margin: 0 1vw;
+    font-size: calc(4px + .8vw);
+    color: var(--csnow);
+}
+
+#main{
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    padding: 2vh 2vw;
+}
+
+#main-text{
+    align-self: center;
+    width: 60%;
+    margin: 1vh 1vw;
+    padding: 1vh 1vw;
+}
+
+#main-title{
+    margin: 2vw 0;
+    text-align: center;
+    font-size: calc(2px + 2.5vw);
+    color: var(--csnow);
+}
+
+#main h2 {
+    color: var(--cfluorescentcyan);
+}
+
+#project1 {
+    display: flex;
+    flex-direction: row;
+    padding: 2vh 2vw;
+}
+
+#project1 p {
+    padding: 0 3vw;
+}
+
+#calculator-description {
+    display: flex;
+    flex-direction: row;
+    padding: 2vh 2vw;
+}
+
+/*Two column container ends*/
+
+/* footer starts */
+footer {
+    text-align: center;
+    padding: 40px;
+    background-color: var(--cpersianindigo);
+    border: 1px solid var(--csnow);
+}
+
+footer p {
+    font-family: "Kode Mono", serif;
+    font-size: calc(4px + 1vw);
+    color: var(--cfluorescentcyan);
+}
+/* footer ends */ 
+
+
+/* media queries start */
+@media screen and (max-width: 900px) {
+    header {
+        text-align: center;
+    }
+
+    #container {
+        width: 100%;
+        height: 100vh;
+        flex-direction: column;
+    }
+
+    main {
+        width: 100%;
+        height: 100vh;
+    }
+
+    #main{
+        width: 100%;
+        display: flex;
+        flex-direction: column;
+        align-items: space-between;
+        justify-content: space-between;
+        padding: 2vh 2vw;
+    }
+
+    #project1 {
+        flex-direction: column;
+        text-align: center;
+    }
+
+    #calculator-description {
+        flex-direction: column;
+        text-align: center;
+    }
+
+    nav {
+        width: 100%;
+    }
+
+    nav ul {
+        display: flex;
+        flex-direction: row;
+        justify-content: space-between;
+    }
+
+    nav li {
+        margin: 5px;
+    }
+}
+
+/* media queries end */
+
+

@@ -4,7 +4,7 @@
 <html>
     <head>
         <meta charset="UTF-8">
-        <link rel="stylesheet" href="styles.css">
+        <link rel="stylesheet" href="projects.css">
         <title> Lin's Resume | Projects </title>
     </head>
 
@@ -20,23 +20,65 @@
             <!-- header ends -->
 
             <!-- navigation starts -->
-            <nav>
-                <!-- six links -->
-                <ul>
-                    <li> <a href="index.html"> Home </a> </li>
-                    <li> <a href="about.html"> About </a> </li>
-                    <li> <a href="contacts.html"> Contacts </a> </li>
-                    <li> <a href="projects.html"> Projects </a> </li>
-                    <li> <a href="experience.html"> Experience </a> </li>
-                    <li> <a href="achievements.html"> Achievments </a> </li>
-                </ul>
-            </nav>
-            <!-- navigation ends -->
+            <div id="container">
+                <nav>
+                    <!-- six links -->
+                    <ul id="nav-links">
+                        <li> <a href="index.html"> Home </a> </li>
+                        <li> <a href="about.html"> About </a> </li>
+                        <li> <a href="contacts.html"> Contacts </a> </li>
+                        <li> <a href="projects.html"> Projects </a> </li>
+                        <li> <a href="experience.html"> Experience </a> </li>
+                        <li> <a href="achievements.html"> Achievments </a> </li>
+                    </ul>
+                </nav>
+                <!-- navigation ends -->
 
-            <!-- main content starts -->
-            <main>
-            </main>
-            <!-- main content ends -->
+                <!-- main content starts -->
+                <main>
+                    <!-- one column start -->
+                    <h3 id="main-title">Projects</h3>
+
+                    <div id="main">
+                        <div id="project1">
+                            <h2>HIDE AND SEEK </h2>
+                            <p>Developed a Full-Stack web application using the Django Framework along with Python, HTML, CSS, and JavaScript and hosted it via Heroku.
+                            Featured multiple data models along with data representation, creation, updates, deletion, data types, relationships between models, and use of the Django ORM while attending carefully to the user interface, giving it a fun, game-like aesthetic.</p>
+                            <a href="https://github.com/Linkhant19/hideandseek_fullstack" target="_blank">GitHub Link</a>
+                        </div>
+
+                        <div id="calculator-description">
+                            <h2> JAVASCRIPT CALCULATOR </h2>
+                            <p>Coded a calculator using JavaScript, HTML, and CSS with 2 input boxes, 6 buttons marked (+, -, *, /, **, Clear), and a textual output. </p>
+                        </div>
+
+                        <div id="calculator-project">
+                            <!-- my 2 input boxes -->
+                            <label for="input1"></label>
+                            <input id="input1" type="text" placeholder="0">
+
+                            <label for="input2"></label>
+                            <input id="input2" type="text" placeholder="0">
+
+                            <div id="buttons">
+                                <button id="add" onclick="add()">+</button>
+                                <button id="subtract" onclick="subtract()">-</button>
+                                <button id="multiply" onclick="multiply()">*</button>
+                                <button id="divide" onclick="divide()">/</button>
+                                <button id="power" onclick="power()">**</button>
+                                <button id="clear" onclick="clear()">Clear</button>
+                            </div>
+                            
+                            <div id="output">
+                                <p></p>
+                            </div>
+                        </div> 
+                    </div>
+
+                    <!--one Column end-->
+                </main>
+                <!-- main content ends -->
+            </div>
 
             <!-- footer starts -->
             <footer>
