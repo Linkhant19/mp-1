@@ -211,13 +211,14 @@ footer p {
         display: flex;
         flex-direction: column;
         align-items: center;
+        justify-content: space-between;
         padding: 2vh 2vw;
     }
 
     #about-photos-container{
         display: flex;
         flex-direction: column;
-        justify-content: space-evenly;
+        justify-content: space-between;
         align-items: center;
     }
 
@@ -228,7 +229,7 @@ footer p {
     }
 
     #main-image{
-        width: 50%;
+        width: 45%;
         margin: 1vh 1vw;
     }
 

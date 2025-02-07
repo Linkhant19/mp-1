@@ -128,14 +128,10 @@ main p{
     color: var(--csnow);
 }
 
-#profile-image{
-    max-width: 100%;
-}
-
 #main{
     width: 100%;
     display: flex;
-    flex-direction: row;
+    flex-direction: column;
     padding: 2vh 2vw;
 }
 
@@ -144,26 +140,6 @@ main p{
     width: 60%;
     margin: 1vh 1vw;
     padding: 1vh 1vw;
-    border: 1px solid var(--csnow);
-
-}
-
-#main-image{
-    width: 50%;
-    margin: 1vh 1vw;
-}
-
-#main-gif-container{
-    width: 100%;
-    display: flex;
-    flex-direction: row;
-    align-items: center;
-    justify-content: center;
-}
-
-#main-gif{
-    width: 20%;
-    margin: 5vh 1vw;
 }
 
 #main-title{
@@ -171,6 +147,33 @@ main p{
     text-align: center;
     font-size: calc(2px + 2.5vw);
     color: var(--csnow);
+}
+
+#main img{
+    width: 28%;
+    margin: 1vh 1vw;
+    padding: 1vh 1vw;
+}
+
+#gmail-container{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+}
+
+#phone-container{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+}
+
+#linkedin-container{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
 }
 
 /*Two column container ends*/
@@ -212,7 +215,7 @@ footer p {
         width: 100%;
         display: flex;
         flex-direction: column;
-        align-items: center;
+        align-items: space-between;
         justify-content: space-between;
         padding: 2vh 2vw;
     }
@@ -229,6 +232,18 @@ footer p {
 
     nav li {
         margin: 5px;
+    }
+
+    #gmail-container{
+        flex-direction: column;
+    }
+
+    #phone-container{
+        flex-direction: column;
+    }
+
+    #linkedin-container{
+        flex-direction: column;
     }
 }
 
