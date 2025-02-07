@@ -160,14 +160,14 @@ main p{
 }
 
 .about-photo{
-    width: 40%;
+    max-width: 40%;
     margin: 1vh 1vw;
 }
 
 #main-title{
     margin: 2vw 0;
     text-align: center;
-    font-size: calc(2px + 2.5vw);
+    font-size: calc(25px + 2.5vw);
     color: var(--csnow);
 }
 
@@ -229,7 +229,7 @@ footer p {
     }
 
     #main-image{
-        width: 45%;
+        max-width: 45%;
         margin: 1vh 1vw;
     }
 

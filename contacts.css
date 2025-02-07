@@ -145,13 +145,13 @@ main p{
 #main-title{
     margin: 2vw 0;
     text-align: center;
-    font-size: calc(2px + 2.5vw);
+    font-size: calc(25px + 2.5vw);
     color: var(--csnow);
 }
 
 #main img{
-    width: 28%;
-    margin: 1vh 1vw;
+    max-width: 28%;
+    margin: .5vh 1vw;
     padding: 1vh 1vw;
 }
 
@@ -215,9 +215,15 @@ footer p {
         width: 100%;
         display: flex;
         flex-direction: column;
-        align-items: space-between;
+        align-items: center;
         justify-content: space-between;
         padding: 2vh 2vw;
+    }
+
+    #main img{
+        max-width: 20vw;
+        margin: .5vh 1vw;
+        padding: 1vh 1vw;
     }
 
     nav {

@@ -143,14 +143,14 @@ main p{
 }
 
 #main-title{
-    margin: 2vw 0;
+    margin: 2vh 0;
     text-align: center;
-    font-size: calc(2px + 2.5vw);
+    font-size: calc(25px + 2.5vw);
     color: var(--csnow);
 }
 
 #main img{
-    width: 20%;
+    max-width: 20%;
     margin: 1vh 1vw;
     padding: 1vh 1vw;
 }
@@ -222,10 +222,16 @@ footer p {
         width: 100%;
         display: flex;
         flex-direction: column;
-        align-items: space-between;
+        align-items: center;
         justify-content: space-between;
         padding: 2vh 2vw;
     }
+
+    #main img{
+        max-width: 15vw;
+        margin: 1vh 1vw;
+        padding: 1vh 1vw;
+    }    
 
     nav {
         width: 100%;

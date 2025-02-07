@@ -53,12 +53,27 @@
                         </div>
 
                         <div id="calculator-project">
-                            <!-- my 2 input boxes -->
-                            <label for="input1"></label>
-                            <input id="input1" type="text">
+                            <h2> THE CALCULATOR </h2>
 
-                            <label for="input2"></label>
-                            <input id="input2" type="text">
+                            <div id="input-output">
+                                <div id="inputs">
+                                    <!-- my 2 input boxes -->
+                                    <label for="input1"></label>
+                                    <p> First Number: </p>
+                                    <input id="input1" type="text">
+
+                                    <label for="input2"></label>
+                                    <p> Second Number: </p>
+                                    <input id="input2" type="text">
+                                </div>
+
+                                <!-- my output -->
+                                <p> Result: </p>
+                                <div id="output">
+                                    <p></p>
+                                </div>
+                            </div>
+                            
 
                             <div id="buttons">
                                 <button id="add" onclick="addition()">+</button>
@@ -66,12 +81,10 @@
                                 <button id="multiply" onclick="multiply()">*</button>
                                 <button id="divide" onclick="divide()">/</button>
                                 <button id="power" onclick="power()">**</button>
-                                <button id="clear" onclick="clear()">Clear</button>
+                                <button id="clear" onclick="reset()">Clear</button>
                             </div>
                             
-                            <div id="output">
-                                <p></p>
-                            </div>
+                            
                         </div> 
                     </div>
 
