@@ -163,6 +163,10 @@ main p{
     padding: 0 3vw;
 }
 
+#project1 a {
+    color: var(--csnow);
+}
+
 #calculator-description {
     display: flex;
     flex-direction: row;
@@ -181,6 +185,11 @@ main p{
     margin: 2vh 2vw;
 }
 
+#calculator-project label {
+    font-size: calc(4px + .8vw);
+    color: var(--csnow);
+}
+
 #input-output {
     display: flex;
     flex-direction: row;
@@ -194,9 +203,21 @@ main p{
     width: 70%;
 }
 
+.input {
+    display: flex;
+    flex-direction: column;
+}
+
 #output {
     width: 30%;
-    color: var(--cfluorescentcyan)
+    color: var(--cfluorescentcyan);
+    font-size: calc(4px + .8vw);
+}
+
+#output p {
+    margin: 0 2vw;
+    font-size: calc(4px + .8vw);
+    color: var(--csnow);
 }
 
 #buttons {
@@ -269,9 +290,17 @@ footer p {
         text-align: center;
     }
 
+    #input-output {
+        flex-direction: column;
+    }
+
+    .input {
+        flex-direction: row;
+    }
+
     #buttons button {
-        min-width: 70px;
-        min-height: 70px;
+        min-width: 50px;
+        min-height: 50px;
         margin: 2vh 2vw;
     }
 
