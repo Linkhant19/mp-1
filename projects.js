@@ -183,8 +183,17 @@ function power() {
 
     let result = 1;
 
-    for (let i = 0; i < input2; i++) {
-        result *= input1;
+    if (input2 > 0) {
+        for (let i = 0; i < input2; i++) {
+            result *= input1;
+        }
+    }
+    // if input2 is negative, the result will be 1/result
+    if (input2 < 0) {
+        for (let i = 0; i < -input2; i++) {
+            result *= input1;
+        }
+        result = 1 / result;
     }
 
     // if result is negative, I will make the color red
